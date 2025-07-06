@@ -236,6 +236,7 @@ if __name__ == '__main__':
         # downloading "punkt" data from "NLTK":S07-B
         try:
             nltk.download('punkt', download_dir = nltk_data_folder_path, quiet = True)
+            nltk.download('punkt_tab', download_dir= nltk_data_folder_path, quiet = True)
         except Exception as error:
             print(f'ERROR - [S07-B] - {str(error)}')
 
